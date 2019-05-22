@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="ajax_basket_style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+
+      </div>
+    </div>
+
+
+
+    <script id="entry-template" type="text/x-handlebars-template">
+
+      <div id="cont">
+        <h1 class="player_code_container">{{ codice }}</h1>
+        <div class="punti">
+          <h2>Punti fatti: <span> {{ punti }}</span></h2>
+        </div>
+        <div class="rimbalzi">
+          <h2>Rimbalzi: <span>{{ rimbalzi }}</span></h2>
+        </div>
+        <div class="falli">
+          <h2>Falli: <span>{{ falli }}</span></h2>
+        </div>
+        <div class="tiri_2">
+          <h2>Tiri da 2 punti (%): <span>{{ perc_2 }}</span></h2>
+        </div>
+        <div class="tiri_3">
+          <h2>Tiri da 3 punti (%): <span>{{ perc_3 }}</span></h2>
+        </div>
+      </div>
+
+
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="ajax_basket_main.js"></script>
+  </body>
+</html>
