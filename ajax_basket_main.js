@@ -54,9 +54,11 @@ $(document).ready(function(){
 
       //fine funzione ajax
     }
+    // oppure mostra tutto il div
+    //$('.cont').show();
 
-
-
+    //azzero valore input
+    $('.input_centro').val('');
 
 
   //fine click
